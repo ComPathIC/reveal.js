@@ -1,40 +1,134 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>compath</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/compath.css">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- TODO select font wghts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section data-background-image="media/backdrop.png">
+          <img data-src="media/logo.svg" class="logo-img-title">
+          <p><strong><span class="logo-text" style="font-size:2.8em">compath</span></strong></p>
+          <p>AI-enhanced pathology</p>
+        </section>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+        <section data-background-image="media/backdrop.png">
+          <h3>Our Prototype</h3>
+          <p class="smaller">
+            Try it out below or at <a href="https://kidneycaliper.lucidifai.com/" target="_blank"><strong>kidneycaliper.lucidifai.com</strong></a>
+          </p>
+          <iframe class="r-stretch" data-src="https://kidneycaliper.lucidifai.com/result/52f6d326-9e26-48c0-b417-739c590c0f5f/" data-preload></iframe>
+        </section>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+        <section data-background-image="media/backdrop.png">
+          <h3>Our Team</h3>
+
+          <div class="column-container r-stretch">
+
+            <div class="teammembers-col">
+              <div class="teammember">
+                <img class="avatar" src="media/avatars/callum.jpg" alt="Callum Arthurs"/>
+                <div>
+                  <p>Callum</p>
+                  <p class="smaller">Computational<br/>Pathology Researcher</p>
+                </div>
+              </div>
+              <div class="teammember">
+                <img class="avatar" src="media/avatars/jess.jpg" alt="Jess Lally"/>
+                <div>
+                  <p>Jess</p>
+                  <p class="smaller">Developer</p>
+                </div>
+              </div>
+              <div class="teammember">
+                <img class="avatar" src="media/avatars/sudo.jpg" alt="Sudarshan Sreeram"/>
+                <div>
+                  <p>Sudo</p>
+                  <p class="smaller">Developer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="teammembers-col">
+              <div class="teammember">
+                <img class="avatar" src="media/avatars/james.jpg" alt="James Ball"/>
+                <div>
+                  <p>James</p>
+                  <p class="smaller">Acting CEO,<br/>Developer</p>
+                </div>
+              </div>
+              <div class="teammember">
+                <img class="avatar" src="media/avatars/stefan.jpg" alt="Stefan Radziuk"/>
+                <div>
+                  <p>Stefan</p>
+                  <p class="smaller">Developer</p>
+                </div>
+              </div>
+              <div class="teammember">
+                <img class="avatar" src="media/avatars/andy.jpg" alt="Andy Wang"/>
+                <div>
+                  <p>Andy</p>
+                  <p class="smaller">Developer</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/backdrop.png">
+          <h3>Our Advisors</h3>
+
+          <div class="column-container r-stretch">
+
+            <div class="teammembers-col">
+              <div class="teammember">
+                <img class="avatar" src="media/avatars/bernhard.jpg" alt="Dr Bernhard Kainz"/>
+                <div>
+                  <p>Dr Bernhard Kainz</p>
+                  <p class="smaller">Deep Learning Researcher</p>
+                  <img src="media/ic_cropped.svg"/>
+                </div>
+              </div>
+
+              <div class="teammember">
+                <img class="avatar" src="media/avatars/candice.jpg" alt="Dr Candice Roufosse"/>
+                <div>
+                  <p>Dr Candice Roufosse</p>
+                  <p class="smaller">Clinical Pathologist</p>
+                  <img src="media/ic_cropped.svg"/>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/backdrop.png">
+          <h2>Want to get in touch?</h2>
+          <h3><a href="mailto:hello@compath.co.uk">hello@compath.co.uk</a></h3>
+        </section>
+
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        autoSlide: 5000,
+      });
+    </script>
+  </body>
 </html>
