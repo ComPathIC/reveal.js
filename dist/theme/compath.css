@@ -458,3 +458,20 @@ img {
   -o-user-drag: none;
   user-drag: none;
 }
+
+.diagram-container {
+  position: relative;
+  overflow: visible;
+}
+
+.diagram {
+  position: absolute;
+  top: -9001px;
+  bottom: -9001px;
+  left: -9001px;
+  right: -9001px;
+  margin: auto !important;
+  max-width: none !important;
+  max-height: none !important;
+  height: 150vh;
+}
