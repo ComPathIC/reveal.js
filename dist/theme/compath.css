@@ -475,3 +475,7 @@ img {
   max-height: none !important;
   height: 150vh;
 }
+
+.reveal .progress {
+  pointer-events: none;
+}
