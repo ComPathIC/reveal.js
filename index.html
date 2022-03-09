@@ -20,7 +20,8 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section data-background-image="media/backdrop.png">
+        <img src="media/logo.svg" class="invisible" id="logo-corner">
+        <section data-background-image="media/backdrop.png" id="title-slide">
           <img data-src="media/logo.svg" class="logo-img-title">
           <p><strong><span class="logo-text" style="font-size:2.8em">compath</span></strong></p>
           <p>AI-enhanced pathology</p>
@@ -149,6 +150,16 @@
     <script>
       Reveal.initialize({
         hash: true,
+      });
+
+      Reveal.on('slidechanged', event => {
+      // Reveal.on('slidetransitionend', event => {
+        if (event.currentSlide.id === 'title-slide') {
+          document.getElementById('logo-corner').classList.add("invisible");
+        } else {
+          document.getElementById('logo-corner').classList.remove("invisible");
+        }
+        // event.previousSlide, event.currentSlide, event.indexh, event.indexv
       });
     </script>
   </body>

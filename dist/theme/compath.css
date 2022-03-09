@@ -370,6 +370,19 @@ section.has-light-background, section.has-light-background h1, section.has-light
   height: 30vh;
 }
 
+#logo-corner.invisible {
+  opacity: 0%;
+}
+
+#logo-corner {
+  position: fixed;
+  top: 0em;
+  right: 0em;
+  height: 1em;
+  opacity: 100%;
+  transition: opacity 0.15s ease;
+}
+
 .column-container {
   display: flex;
   flex-direction: row;
