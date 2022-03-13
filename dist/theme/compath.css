@@ -398,6 +398,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
   height: 160px;
 }
 
+.name {
+  font-weight: var(--r-heading-font-weight);
+}
+
 .teammember > div {
   display: flex;
   flex-direction: column;
@@ -430,6 +434,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .smaller {
   font-size: 70%;
   line-height: 1.2 !important;
+  font-weight: 300;
 }
 
 .demo-active .reveal .controls,
