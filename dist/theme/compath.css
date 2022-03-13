@@ -383,7 +383,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .teammembers-col {
   display: flex;
   flex-direction: column;
-  margin: 0 4vh 0 4vh;
+  margin: 0 4vh;
   justify-content: space-evenly;
 }
 
@@ -410,8 +410,8 @@ section.has-light-background, section.has-light-background h1, section.has-light
   text-align: left;
 }
 
-.teammember > div > img {
-  margin: 0.5em 0;
+.logos > img {
+  margin: 0.5em;
   max-height: 1em;
 }
 
